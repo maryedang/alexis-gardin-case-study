@@ -1,2 +1,7 @@
-# alexis-gardin-case-study
-A case study of a design system for web development
+# Alexis Gardin Case Study
+
+> A case study of a design system for web development
+
+## Author
+
+Mary Dang
