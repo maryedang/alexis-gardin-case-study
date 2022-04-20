@@ -57,6 +57,9 @@ h5 {
   font-size: 1.2rem;
 }
 
+p {
+  margin: 0;
+}
 header {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -237,4 +240,38 @@ blockquote {
 
 .highlight {
   color: var(--red-orange);
+}
+
+.page-section-contact {
+  padding: 2rem;
+}
+
+.page-section-contact h2 {
+  margin: .5rem;
+}
+
+.contact-form {
+  margin: 3rem 0 1rem;
+}
+
+.contact-form h4 {
+  font-weight: 500;
+  display: inline-block;
+  line-height: 1;
+}
+
+.contact-form input {
+  font-family: var(--font-sans-serif);
+  font-weight: 500;
+  color: #ccc;
+  font-size: 1.2rem;
+  padding: .5em .5em;
+  border: transparent;
+  border-bottom: 1px solid black;
+  width: 300px;
+}
+
+.contact-form__image {
+  width: 300px;
+  padding: 0 0 1rem 0;
 }
