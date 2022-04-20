@@ -268,10 +268,14 @@ blockquote {
   padding: .5em .5em;
   border: transparent;
   border-bottom: 1px solid black;
-  width: 300px;
+  width: 280px;
 }
 
 .contact-form__image {
   width: 300px;
   padding: 0 0 1rem 0;
+}
+
+footer p {
+  font-weight: 500;
 }
