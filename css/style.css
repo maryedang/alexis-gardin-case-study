@@ -53,7 +53,63 @@ h4 {
   font-size: 1.5rem;
 }
 
-.component__code > * {
-  background: var(--light-yellow);
+/*.component__code > * {
   padding: 1rem;
+}*/
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid black;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li:first-child a {
+  border-left: 1px solid black;
+}
+
+li a {
+  padding: 2rem 2.2rem;
+  border-right: 1px solid black;
+  display; inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__logo {
+  border-right: 1px solid black;
+  display: inline-block;
+  padding: .4rem;
+  width: 54%;
+}
+
+.header__status {
+  display: flex;
+  align-items: center;
+  justiify-content: flex-start;
+}
+
+.fa-circle {
+  color: #0bda04;
+}
+
+.header__status p {
+  padding-left: .5rem;
+}
+
+.menu__item--active a {
+  background: var(--brand-yellow);
 }
