@@ -53,6 +53,10 @@ h4 {
   font-size: 1.5rem;
 }
 
+h5 {
+  font-size: 1.2rem;
+}
+
 /*.component__code > * {
   padding: 1rem;
 }*/
@@ -163,4 +167,65 @@ aside {
 
 .border__icon {
   height: 25px;
+}
+
+.page-section-testament {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.page-section-testament > * {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.blockquote__images-stars {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.blockquote__images-stars img {
+  width: 25px;
+  margin: 5px;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.client-block {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-top: 1rem;
+} 
+
+.client-block__image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.client-block__name h5 {
+  margin: 0;
+}
+
+.client-block__name p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: .5rem 0;
+}
+
+.stats-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stats-block h3 {
+  color: var(--red-orange);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.stats-block h4 {
+
 }
