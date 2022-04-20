@@ -57,10 +57,6 @@ h5 {
   font-size: 1.2rem;
 }
 
-/*.component__code > * {
-  padding: 1rem;
-}*/
-
 header {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -224,8 +220,21 @@ blockquote {
   color: var(--red-orange);
   font-size: 3rem;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
-.stats-block h4 {
+.stats-block li h5 {
+  margin: 0;
+}
 
+.skills-block {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.highlight {
+  color: var(--red-orange);
 }
