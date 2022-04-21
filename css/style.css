@@ -446,7 +446,7 @@ footer p {
   font-size: .9rem;
 }
 
-/*.component-page__section-heading {
+.component-page__section-heading {
   margin-bottom: 0;
   font-size: 1em;
   font-weight: 400;
@@ -455,17 +455,17 @@ footer p {
   color: var(--white);
   padding: 0.5rem;
   position: sticky;
-  top: 4.5rem;
+  top: 0rem;
   z-index: 10;
-}*/
+}
 
-/*.component-page .component__name {
+.component-page .component__name {
   position: sticky;
-  top: 6.5rem;
+  top: 2.6rem;
   z-index: 9;
   background: #ccc;
   font-size: .9rem;
   font-weight: 400;
   margin: 0;
   padding: .5rem;
-}*/
+}
