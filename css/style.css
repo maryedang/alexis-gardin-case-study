@@ -92,7 +92,7 @@ ul {
   display: inline-block;
 }
 
-.move:hover {
+.nav__item a:hover .move {
   -ms-transform: rotate(-20deg);
   transform: rotate(-20deg);
 }
@@ -163,7 +163,7 @@ a {
   padding: 1px;
 }
 
-.social-media__item img:hover {
+.social-media__item a:hover img {
   box-shadow: 5px 5px 0px red;
   -ms-transform: skew(-5deg, -5deg);
   transform: skew(-5deg, -5deg);
@@ -180,12 +180,14 @@ main p {
   padding: .8rem 2rem;
   border: 2px solid black;
   border-radius: 3px;
-  transition: transform .1s;
+  transition: .1s ease-in;
+  display: inline-block;
 }
 
 .button:hover {
-  -ms-transform: skew(-5deg, -5deg);
-  transform: skew(-5deg, -5deg);
+  -ms-transform: skew(-3deg, -3deg);
+  transform: skew(-3deg, -3deg);
+  box-shadow: 5px 5px 0 var(--black);
 }
 
 .main__image-snoopy {
@@ -274,6 +276,10 @@ blockquote {
   margin: .5rem 0;
 }
 
+.page-section-skills {
+  border: 1px solid var(--black);
+}
+
 .stats-block {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -291,11 +297,19 @@ blockquote {
 }
 
 .skills-block {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 3rem;
+}
+
+.skills-block:last-child {
+  border-bottom: none;
+}
+
+.flood:hover {
+  background: var(--brand-yellow);
 }
 
 .highlight {
