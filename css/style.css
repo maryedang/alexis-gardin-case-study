@@ -36,6 +36,30 @@ img {
 
 .component__image {
   overflow-x: auto;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.component__code {
+  border: 1px solid #ccc;
+  position: relative;
+  padding: 1em;
+}
+
+.component__image:before,
+.component__code:before {
+  font-family: monospace;
+  content: "IMG";
+  z-index: 1;
+  padding: .25em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f0f0f0;
+}
+
+.component__code:before {
+  content: "CODE";
 }
 
 h1 {
@@ -142,19 +166,26 @@ a {
   overflow: auto;
 }
 
+.bump {
+  top: 0 !important;
+  position: absolute;
+}
+
 .two-col {
   float: left;
   width: 50%;
 }
 
 .side-navigation__image {
-  height: 250px;
+  height: 260px;
 }
 
 .social-media__list {
   display: flex;
   flex-direction: column;
   padding-left: .5em;
+  margin-top: 1.1em;
+  margin-bottom: 2px;
 }
 
 .social-media__item {
@@ -167,10 +198,7 @@ a {
   border-radius: 50%;
   transition: transform .5s ease-in;
   border: 1px solid var(--white);
-}
-
-.social-media__item a {
-  padding: 1px;
+  margin-bottom: 20px;
 }
 
 .social-media__item a:hover img {
@@ -211,13 +239,9 @@ main p {
 /*Aside Section*/
 
 aside {
-  width: 42.3%;
+  width: 55.4%;
   background: var(--brand-yellow);
   height: auto;
-}
-
-.aside__text {
-
 }
 
 .aside__text h2 {
@@ -469,3 +493,5 @@ footer p {
   margin: 0;
   padding: .5rem;
 }
+
+
