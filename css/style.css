@@ -344,8 +344,14 @@ blockquote {
   border-bottom: none;
 }
 
+.flood {
+  background-image: linear-gradient(to bottom, transparent, transparent 50%, var(--brand-yellow) 50%, var(--brand-yellow));
+  transition: background-position 1s;
+  background-size: 100% 200%;
+}
+
 .flood:hover {
-  background: var(--brand-yellow);
+  background-position: 0 -100%;
 }
 
 .highlight {
