@@ -517,7 +517,7 @@ footer p {
   width: 4.6rem;
   background: var(--white);
   z-index: 99;
-  padding-top: 12rem;
+  padding-top: 10rem;
   padding-left: .5rem;
   border-right: 1px solid var(--black);
 }
