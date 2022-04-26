@@ -362,11 +362,13 @@ aside {
 .page-section-testament {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  padding: 4rem;
+  justify-content: space-between;
 }
 
 .page-section-testament > * {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 2rem;
 }
 
 .blockquote__images-stars {
@@ -408,7 +410,8 @@ blockquote {
 /*Page Section - Skills*/
 
 .page-section-skills {
-  border: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
 }
 
 .stats-block {
@@ -432,7 +435,7 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 4rem;
 }
 
 .skills-block:last-child {
@@ -454,7 +457,7 @@ blockquote {
 }
 
 .page-section-contact {
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .page-section-contact h2 {
@@ -493,6 +496,8 @@ blockquote {
 
 footer p {
   font-weight: 500;
+  padding: 1rem;
+  text-align: center;
 }
 
 /*Homepage*/
@@ -529,7 +534,7 @@ footer p {
 }
 
 .main-content--top main {
-  padding: 2rem 3rem;
+  padding: 2rem 4rem;
 }
 
 .main-content--top aside {
