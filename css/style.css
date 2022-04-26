@@ -261,15 +261,15 @@ a {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  transition: transform .5s ease-in;
+  transition: transform .3s;
   border: 1px solid var(--white);
   margin-bottom: 20px;
 }
 
 .social-media__item a:hover img {
-  box-shadow: 5px 5px 0px red;
-  -ms-transform: skew(-5deg, -5deg);
-  transform: skew(-5deg, -5deg);
+  box-shadow: 3px 3px 0px red;
+  -ms-transform: skew(-3deg, -3deg);
+  transform: skew(-3deg, -3deg);
 }
 
 /*Main Page Section*/
@@ -508,9 +508,24 @@ footer p {
 .side-navigation--left {
   position: fixed;
   height: 100%;
-  width: 4rem;
+  width: 4.6rem;
   background: var(--white);
-  vertical-align: center;
   z-index: 99;
-  top: 10rem;
+  padding-top: 12rem;
+  padding-left: .5rem;
+  border-right: 1px solid var(--black);
+}
+
+.main-content {
+  background: var(--light-yellow);
+  margin-left: 4.6rem;
+}
+
+.main-content--top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+aside {
+  
 }
