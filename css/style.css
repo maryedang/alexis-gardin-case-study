@@ -26,6 +26,75 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+h1 .special-style {
+  font-weight: 600;
+  color: var(--red-orange);
+}
+
+h2, h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+}
+
+/*Templates*/
+
+.component-page {
+  display: grid;
+  grid-template-columns: 18rem minmax(0, 1fr);
+  grid-template-areas: "header main";
+  padding-top: 0;
+}
+
+.component-page__header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #ccc;
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+.component-page__header-container {
+  position: static;
+  padding: .5rem 1.5rem;
+}
+
+.sidebar-nav__heading {
+  margin-bottom: .3em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.sidebar-nav__list {
+  margin-top: 0;
+  flex-direction: column;
+  font-size: .9rem;
+}
+
+.component-page__main {
+  grid-area: main;
+  padding: 1rem;
+}
+
 .component {
   position: relative;
 }
@@ -62,32 +131,28 @@ img {
   content: "CODE";
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 2.8rem;
-  line-height: 1.2;
-}
-
-h1 .special-style {
-  font-weight: 600;
-  color: var(--red-orange);
-}
-
-h2, h3 {
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.2rem;
-}
-
-p {
+.component-page .component__name {
+  position: sticky;
+  top: 2.6rem;
+  z-index: 9;
+  background: #ccc;
+  font-size: .9rem;
+  font-weight: 400;
   margin: 0;
+  padding: .5rem;
+}
+
+.component-page__section-heading {
+  margin-bottom: 0;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  position: sticky;
+  top: 0rem;
+  z-index: 10;
 }
 
 /*Page header*/
@@ -429,69 +494,23 @@ footer p {
   font-weight: 500;
 }
 
-/*templates*/
+/*Homepage*/
 
-.component-page {
-  display: grid;
-  grid-template-columns: 18rem minmax(0, 1fr);
-  grid-template-areas: "header main";
-  padding-top: 0;
-}
-
-.component-page__header {
+.wrapper {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  background: #ccc;
-  z-index: 100;
-  overflow-y: scroll;
-}
-
-.component-page__main {
-  grid-area: main;
-  padding: 1rem;
-}
-
-.component-page__header-container {
-  position: static;
-  padding: .5rem 1.5rem;
-}
-
-.sidebar-nav__heading {
-  margin-bottom: .3em;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1.2rem;
-}
-
-.sidebar-nav__list {
   margin-top: 0;
-  flex-direction: column;
-  font-size: .9rem;
+  width: 100%;
+  background: var(--white);
+  z-index: 100;
+  top: 0;
 }
 
-.component-page__section-heading {
-  margin-bottom: 0;
-  font-size: 1em;
-  font-weight: 400;
-  text-transform: uppercase;
-  background: var(--black);
-  color: var(--white);
-  padding: 0.5rem;
-  position: sticky;
-  top: 0rem;
-  z-index: 10;
+.side-navigation--left {
+  position: fixed;
+  height: 100%;
+  width: 4rem;
+  background: var(--white);
+  vertical-align: center;
+  z-index: 99;
+  top: 10rem;
 }
-
-.component-page .component__name {
-  position: sticky;
-  top: 2.6rem;
-  z-index: 9;
-  background: #ccc;
-  font-size: .9rem;
-  font-weight: 400;
-  margin: 0;
-  padding: .5rem;
-}
-
-
