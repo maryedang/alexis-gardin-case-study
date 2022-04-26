@@ -323,7 +323,8 @@ aside {
 /*Page Section Border*/
 
 .page-section__border {
-  border:  1px solid black;
+  border-top:  1px solid black;
+  border-bottom:  1px solid black;
   margin-top: 1rem;
   overflow-x: hidden;
 }
@@ -523,9 +524,17 @@ footer p {
 
 .main-content--top {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 27.5rem;
+  margin-top: 4.6rem;
 }
 
-aside {
-  
+.main-content--top main {
+  padding: 2rem 3rem;
+}
+
+.main-content--top aside {
+  position: absolute;
+  right: 0;
+  width: 27.5rem;
+  top: 4px;
 }
