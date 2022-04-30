@@ -332,7 +332,8 @@ aside {
   border-bottom:  1px solid black;
   margin-top: 1rem;
   overflow-x: hidden;
-  height: 8vh;
+  height: 12vh;
+  padding: 1rem 0;
 }
 
 .tickertape {
@@ -550,7 +551,7 @@ footer p {
 .main-content--top {
   display: grid;
   grid-template-columns: 1fr 30%;
-  height: calc(100% - 8vh);
+  height: calc(100% - 12vh);
   /*padding: 4.6rem;*/
 }
 
@@ -567,6 +568,5 @@ footer p {
 
 .page-section__border--bottom {
   margin-top: 0;
-  padding: 1rem 0;
 }
 
