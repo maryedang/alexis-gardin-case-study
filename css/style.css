@@ -332,6 +332,7 @@ aside {
   border-bottom:  1px solid black;
   margin-top: 1rem;
   overflow-x: hidden;
+  padding: 1rem 0;
 }
 
 .tickertape {
@@ -557,13 +558,15 @@ footer p {
 }
 
 .main-content--top aside {
-/*  position: absolute;
-  right: 0;
-  width: 27.5rem;
-  top: 4px;*/
+  /*position: absolute;*/
 }
 
 .page-section__border--bottom {
-  position: relative;
-  bottom: 20px;
+  position: absolute;
+  bottom: 0px;
+  margin-top: 0;
+}
+
+.tickertape--slow {
+  animation: tickerh linear 20s infinite;
 }
