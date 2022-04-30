@@ -163,11 +163,11 @@ p {
 header {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  /*grid-template-rows: 8vh;*/
   border-top: 1px solid #ccc;
   border-bottom: 1px solid black;
   align-items: center;
   margin-top: 1rem;
-  height: 9.1vh;
 }
 
 ul {
@@ -181,7 +181,7 @@ ul {
 }
 
 .nav__item a {
-  padding: 1.9rem 2.2rem;
+  padding: 1.8rem 2.2rem;
   border-right: 1px solid black;
   display; inline-block;
   font-size: 1.1rem;
@@ -210,7 +210,7 @@ a {
 .header__logo {
   border-right: 1px solid black;
   display: inline-block;
-  padding: .4rem;
+  padding: .3rem;
   width: 54%;
 }
 
@@ -537,7 +537,11 @@ footer p {
   width: 100%;
   background: var(--white);
   z-index: 100;
-  top: -6px;
+  top: 0;
+}
+
+.header__status p {
+  margin: 0;
 }
 
 /*Homepage - Sidebar*/
@@ -545,7 +549,7 @@ footer p {
 .side-navigation--left {
   position: fixed;
   height: 100%;
-  width: 4.6rem;
+  width: 4.5rem;
   background: var(--white);
   z-index: 99;
   padding-top: 10rem;
@@ -622,8 +626,6 @@ footer p {
 /*Homepage - iPad*/
 
 @media (max-width: 60rem) {
-  .wrapper, .side-navigation--left, .main-content-aside {
-    display: none;
-  }
-  
+
+
 }
