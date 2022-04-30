@@ -267,7 +267,7 @@ a {
 }
 
 .social-media__item a:hover img {
-  box-shadow: 3px 3px 0px red;
+  box-shadow: 3px 3px 0px var(--red-orange);
   -ms-transform: skew(-3deg, -3deg);
   transform: skew(-3deg, -3deg);
 }
@@ -520,6 +520,19 @@ footer p {
   padding-top: 10rem;
   padding-left: .5rem;
   border-right: 1px solid var(--black);
+}
+
+.side-navigation--bottom {
+  position: absolute;
+  bottom: 5rem;
+}
+
+.social-media__item--black a:hover img {
+  box-shadow: 3px 3px 0px var(--black);
+}
+
+.social-media__item--blue a:hover img {
+  box-shadow: 3px 3px 0px #0370AD;
 }
 
 .main-content {
