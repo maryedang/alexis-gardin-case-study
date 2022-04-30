@@ -568,5 +568,7 @@ footer p {
 
 .page-section__border--bottom {
   margin-top: 0;
+  position: relative;
+  bottom: 1vh;
 }
 
