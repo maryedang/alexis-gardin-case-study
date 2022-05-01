@@ -187,7 +187,7 @@ a {
   color: black;
 }
 
-/*Page header*/
+/***** Page header *****/
 
 header {
   display: grid;
@@ -196,6 +196,15 @@ header {
   border-bottom: 1px solid black;
   align-items: center;
   margin-top: 1rem;
+}
+
+.wrapper {
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+  background: var(--white);
+  z-index: 100;
+  top: 0;
 }
 
 .header__logo {
@@ -257,7 +266,13 @@ ul {
   transform: rotate(-20deg);
 }
 
-/*Sidebar*/
+/*Page header -- Mobile*/
+
+
+
+
+
+/***** Sidebar *****/
 
 .clearfix {
   overflow: auto;
@@ -275,6 +290,22 @@ ul {
 
 .side-navigation__image {
   height: 260px;
+}
+
+.side-navigation--left {
+  position: fixed;
+  height: 100%;
+  width: 4.5rem;
+  background: var(--white);
+  z-index: 99;
+  padding-top: 10rem;
+  padding-left: .5rem;
+  border-right: 1px solid var(--black);
+}
+
+.side-navigation--bottom {
+  position: absolute;
+  bottom: 0rem;
 }
 
 .social-media__list {
@@ -312,7 +343,34 @@ ul {
   box-shadow: 3px 3px 0px #0370AD;
 }
 
-/*Main Page Section*/
+/* Sidebar -- Mobile */
+
+
+
+
+
+
+/***** Main Page Section *****/
+
+.main-content {
+  background: var(--light-yellow);
+  margin-left: 4rem;
+  overflow: hidden;
+}
+
+.main-content--top {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 92vh;
+}
+
+.main-content-text {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+  justify-content: center;
+  width: 95%;
+}
 
 .main-content__heading {
   margin-top: 40px;
@@ -347,11 +405,22 @@ ul {
   width: 150px;
 }
 
-/*Aside Section*/
+/*Main content -- Mobile*/
+
+
+
+
+
+/***** Aside Section *****/
 
 aside {
   max-width: 100%;
   border-left: 1px solid var(--black);
+}
+
+.main-content-aside {
+  display: grid;
+  grid-template-rows: 60% auto;
 }
 
 .aside__image img {
@@ -379,7 +448,36 @@ aside {
   transform: scale(1.3);
 }
 
-/*Page Section Border*/
+/*Aside - homepage specific*/
+
+.main-content-aside .aside__image img {
+  width: 100vw;
+} 
+
+.main-content-aside .aside__text {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  max-width: 100vw;
+}
+
+/*Aside - Mobile*/
+
+
+
+
+/***** Page section border *****/
+
+.snoopy-position {
+  position: absolute;
+  left: 45vw;
+  top: auto;
+  right: 0;
+  bottom: 6vh;
+  z-index: 99;
+  overflow: hidden;
+  width: 150px;
+}
 
 .page-section__border {
   border-top:  1px solid black;
@@ -388,6 +486,8 @@ aside {
   overflow-x: hidden;
   background: var(--light-yellow);
 }
+
+
 
 .tickertape {
   display: flex;
@@ -425,6 +525,7 @@ aside {
   align-items: center;
 }
 
+
 .border__icon {
   height: 1.5rem;
   margin-left: 30px;
@@ -433,7 +534,31 @@ aside {
   max-width: 100%;
 }
 
-/*Page Section - Testament*/
+
+
+
+/*Page section border - Homepage specific*/
+
+.page-section__border--bottom {
+  margin-top: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.page-section__border--bottom .tickertape h2 {
+  padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/***** Page section testament *****/
 
 .page-section-testament {
   display: grid;
@@ -511,7 +636,9 @@ aside {
   font-weight: 700;
 }
 
-/*Page Section - Skills*/
+
+
+/***** Page section skills *****/
 
 .page-section-skills {
   border-top: 1px solid var(--black);
@@ -564,7 +691,18 @@ aside {
   margin: 10px 20px 10px 0;
 }
 
-/*Contact Form*/
+
+
+.skills-block h3 {
+  font-size: 180%;
+  text-align: center;
+}
+.skills-block h4 {
+  font-size: 140%;
+}
+
+
+/***** Contact form *****/
 
 .contact-wrapper {
   padding: 8vh 5vw;
@@ -608,7 +746,7 @@ aside {
   background: var(--light-yellow);
 }
 
-/*Footer*/
+/***** Footer *****/
 
 .footer {
   background: var(--light-yellow);
@@ -622,138 +760,14 @@ aside {
   padding: 1rem;
 }
 
-/*Homepage - Header*/
-
-.wrapper {
-  position: fixed;
-  margin-top: 0;
-  width: 100%;
-  background: var(--white);
-  z-index: 100;
-  top: 0;
-}
-
-.header__status p {
-  /*margin: 0;*/
-}
-
-/*Homepage - Sidebar*/
-
-.side-navigation--left {
-  position: fixed;
-  height: 100%;
-  width: 4.5rem;
-  background: var(--white);
-  z-index: 99;
-  padding-top: 10rem;
-  padding-left: .5rem;
-  border-right: 1px solid var(--black);
-}
-
-.side-navigation--bottom {
-  position: absolute;
-  bottom: 0rem;
-}
 
 
 
-/*Homepage - Top Fold*/
 
-.main-content {
-  background: var(--light-yellow);
-  margin-left: 4rem;
-  overflow: hidden;
-}
 
-.main-content--top {
-  display: grid;
-  grid-template-columns: 65% 35%;
-  height: 92vh;
-}
 
-.main-content-text {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 6rem;
-  justify-content: center;
-  width: 95%;
-}
 
-.main-content-aside {
-  display: grid;
-  grid-template-rows: 60% auto;
-}
 
-.main-content-aside .aside__image img {
-  width: 100vw;
-}
-
-.main-content-aside .aside__text {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  max-width: 100vw;
-}
-
-.main-content-aside .aside__text h2 {
-  padding-left: 20px;
-}
-
-/*Homepage - Border Section*/
-
-.page-section__border--bottom {
-  margin-top: 0;
-  position: relative;
-  overflow: visible;
-}
-
-.border-item {
-  display: flex;
-  height: 8vh;
-  padding: 20px 30px 20px 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.border__icon {
-  height: 1.5rem;
-  margin-left: 30px;
-  vertical-align: middle;
-  display: inline-block;
-  max-width: 100%;
-}
-
-.page-section__border--bottom .tickertape h2 {
-  padding-left: 30px;
-}
-
-.snoopy-position {
-  position: absolute;
-  left: 45vw;
-  top: auto;
-  right: 0;
-  bottom: 6vh;
-  z-index: 99;
-  overflow: hidden;
-  width: 150px;
-}
-
-.mobile-skills-block {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 70%;
-  column-gap: 20px;
-}
-
-.skills-block h3 {
-  font-size: 180%;
-  text-align: center;
-}
-.skills-block h4 {
-  font-size: 140%;
-}
 
 /*Homepage - iPad*/
 
@@ -885,6 +899,14 @@ aside {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+  .mobile-skills-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    column-gap: 20px;
   }
   .page-section-contact {
     padding: 5rem 3rem;
