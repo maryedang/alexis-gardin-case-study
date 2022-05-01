@@ -440,6 +440,7 @@ aside {
   grid-template-columns: 40% 1fr;
   grid-gap: 2rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-section-wrapper {
@@ -465,18 +466,8 @@ aside {
   padding: 0;
 }
 
-.page-section-testament h3 {
-  font-size: 32px;
-  line-height: 1.2em;
-}
-
-.page-section-testament h5 {
-  font-size: 1.2rem;
-  line-height: 1.2em;
-}
-
 .testament-client-block {
-  margin-top: 1rem;
+  margin-top: 20px;
   padding: 0;
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -490,14 +481,34 @@ aside {
 }
 
 .client-block__name h5 {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .client-block__name p {
   font-size: 1.2rem;
   font-weight: 200;
-  margin: .5rem 0;
-  padding: 0;
+}
+
+.testament-summary-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  justify-content: space-between;
+}
+
+.testament-summary-block h3 {
+  color: var(--red-orange);
+  font-size: 3rem;
+  line-height: 1.5em;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.testament-summary-block h5 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 /*Page Section - Skills*/
@@ -507,35 +518,20 @@ aside {
   border-bottom: 1px solid var(--black);
 }
 
-.stats-block {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  justify-content: space-between;
-}
-
-.stats-block h3 {
-  color: var(--red-orange);
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 0;
-}
-
-.stats-block li h5 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
 .skills-block {
   border-bottom: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 6rem;
+  padding: 1rem;
 }
 
 .skills-block:last-child {
   border-bottom: none;
+}
+
+.skills-block-wrapper {
+  padding: 1rem 6rem;
 }
 
 .flood {
@@ -548,27 +544,48 @@ aside {
   background-position: 0 -100%;
 }
 
+.skills-block__main-heading {
+  font-size: 1.7rem;
+}
+
 .highlight {
   color: var(--red-orange);
 }
 
-.page-section-contact {
-  padding: 6rem;
+.skills-block__heading {
+  font-size: 1.3rem;
+  line-height: 1em;
+  margin: 20px 20px 20px 0;
 }
 
-.page-section-contact h2 {
-  margin: .5rem;
-}
-
-.page-section-contact p {
-  padding: 0;
-  margin: 0;
+.skills-block__subheading {
+  font-size: 1rem;
+  line-height: 1.2em;
+  margin: 10px 20px 10px 0;
 }
 
 /*Contact Form*/
 
+.contact-wrapper {
+  padding: 8vh 5vw;
+}
+
+.contact__heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 1.2em;
+}
+
+.contact__body {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
 .contact-form {
-  margin: 3rem 0 1rem;
+  margin: 40px 0 15px;
 }
 
 .contact-form h4 {
@@ -582,29 +599,27 @@ aside {
   font-family: var(--font-sans-serif);
   font-weight: 500;
   color: #ccc;
-  font-size: 1.2rem;
-  padding: .5em .5em;
+  font-size: 18px;
+  padding: 8px 12px;
+  margin: 10px 5px;
   border: transparent;
   border-bottom: 1px solid black;
-  width: 280px;
+  width: 250px;
   background: var(--light-yellow);
-}
-
-.contact-form__image {
-  width: 300px;
-  padding: 0 0 1rem 0;
 }
 
 /*Footer*/
 
-footer {
+.footer {
   background: var(--light-yellow);
 }
 
-footer p {
+.footer-copyright {
   font-weight: 500;
   text-align: center;
-  margin: 0;
+  line-height: 1.3em;
+  font-size: 1rem;
+  padding: 1rem;
 }
 
 /*Homepage - Header*/
