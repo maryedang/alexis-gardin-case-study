@@ -32,7 +32,8 @@ h1 {
   font-weight: 900;
   font-size: 3vw;
   line-height: 1.2;
-  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h1 .special-style {
@@ -61,7 +62,7 @@ p {
 
 .component-page {
   display: grid;
-  grid-template-columns: 15rem minmax(0, 1fr);
+  grid-template-columns: 17rem minmax(0, 1fr);
   grid-template-areas: "header main";
   padding-top: 0;
 }
@@ -302,8 +303,7 @@ a {
 }
 
 .main__image-snoopy {
-  position: relative;
-  left: 600px;
+  padding-top: 1rem;
   width: 150px;
 }
 
@@ -345,16 +345,15 @@ aside {
   border-bottom:  1px solid black;
   margin-top: 1rem;
   overflow-x: hidden;
-  height: 11vh;
-  padding: 1rem 0;
   background: var(--light-yellow);
 }
 
 .tickertape {
-  padding: 0 1rem;
   display: flex;
+  width: 200%;
+  justify-content: flex-start;
   align-items: center;
-  animation: tickerh linear 10s infinite;
+  animation: tickerh linear 20s infinite;
 }
 
 .tickertape > * {
@@ -367,6 +366,9 @@ aside {
   color: var(--red-orange);
   margin: 0;
   display: inline-block;
+  font-size: 2rem;
+  line-height: 1em;
+  text-align: center;
 }
 
 @keyframes tickerh {
@@ -374,8 +376,20 @@ aside {
   100% { transform: translate3d(-100%, 0, 0); }
 }
 
+.border-item {
+  display: flex;
+  height: 8vh;
+  padding: 20px 30px 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
 .border__icon {
-  height: 25px;
+  height: 1.5rem;
+  margin-left: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
 }
 
 /*Page Section - Testament*/
@@ -439,6 +453,7 @@ blockquote {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  justify-content: space-between;
 }
 
 .stats-block h3 {
@@ -578,13 +593,12 @@ footer p {
 .main-content {
   background: var(--light-yellow);
   margin-left: 4rem;
-  margin-top: 4rem;
 }
 
 .main-content--top {
   display: grid;
   grid-template-columns: 65% 35%;
-  height: calc(100vh - 17vh);
+  height: 92vh;
 }
 
 .main-content-text {
@@ -612,7 +626,7 @@ footer p {
 }
 
 .main-content-aside .aside__text h2 {
-  padding: 0;
+  padding-left: 20px;
 }
 
 /*Homepage - Border Section*/
@@ -620,16 +634,38 @@ footer p {
 .page-section__border--bottom {
   margin-top: 0;
   position: relative;
-  /*bottom: 0vh;*/
-  bottom: 3vh;
-  /*overflow: hidden;*/
+  overflow: visible;
+}
+
+.border-item {
+  display: flex;
+  height: 8vh;
+  padding: 20px 30px 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.border__icon {
+  height: 1.5rem;
+  margin-left: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.page-section__border--bottom .tickertape h2 {
+  padding-left: 30px;
 }
 
 .snoopy-position {
   position: absolute;
-  left: 50vw;
-  top: calc(100vh - 33vh);
-  z-index: 99;
+  left: 45vw;
+  top: auto;
+  right: 0;
+  bottom: 6vh;
+  z-index: 101;
+  overflow: hidden;
+  width: 150px;
 }
 
 /*Homepage - iPad*/
@@ -686,14 +722,14 @@ footer p {
   .main-content {
     margin: 0;
   }
-  .main-content-top {
+  .main-content--top {
     height: auto;
   }
   .main-content-text {
-    width: 100vw;
-    padding: 1rem 2rem;
+    width: 90vw;
+    padding: 6rem 2rem;
     z-index: 2;
-    margin-top: -2rem;
+    /*width: 90%;*/
   }
   .main-content-text p {
     font-size: 90%;
@@ -707,11 +743,25 @@ footer p {
     margin: 0;
   }
   h2 {
-    font-size: 100%;
+    font-size: 150%;
+  }
+  .stats-block h3 {
+    font-size: 200%;
+  }
+  h4 {
+    font-size: 120%;
+  }
+
+  h5 {
+    font-size: 120%;
+  }
+
+  p {
+    padding: 1rem 0;
   }
   .main-content-aside {
     display: none;
-  }
+  }sn
   .mobile-image {
     display: block;
     position: absolute;
@@ -720,20 +770,27 @@ footer p {
     right: 40px;
     bottom: auto;
     display: block;
-    width: 50vw;
+    width: 30%;
     opacity: .5;
-  }
-  .snoopy-position {
-    top: calc(100vh - 30vh);
-  }
-  .page-section__border--bottom {
-    padding: 1rem 0;
-    height: 7vh;
   }
   .page-section-testament {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0;
     margin: 0;
+  }
+  .client-block {
+    padding-top: 1rem;
+  }
+  .client-block__name p {
+    padding: 0;
+  }
+  .skills-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-block h3 {
+    font-size: 150%;
+    text-align: center;
   }
 }
