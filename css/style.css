@@ -62,7 +62,7 @@ p {
 
 .component-page {
   display: grid;
-  grid-template-columns: 17rem minmax(0, 1fr);
+  grid-template-columns: 18rem minmax(0, 1fr);
   grid-template-areas: "header main";
   padding-top: 0;
 }
@@ -593,6 +593,7 @@ footer p {
 .main-content {
   background: var(--light-yellow);
   margin-left: 4rem;
+  overflow: hidden;
 }
 
 .main-content--top {
@@ -663,9 +664,18 @@ footer p {
   top: auto;
   right: 0;
   bottom: 6vh;
-  z-index: 101;
+  z-index: 99;
   overflow: hidden;
   width: 150px;
+}
+
+.mobile-skills-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  column-gap: 20px;
 }
 
 /*Homepage - iPad*/
@@ -729,7 +739,6 @@ footer p {
     width: 90vw;
     padding: 6rem 2rem;
     z-index: 2;
-    /*width: 90%;*/
   }
   .main-content-text p {
     font-size: 90%;
@@ -788,9 +797,32 @@ footer p {
   .skills-block {
     display: flex;
     flex-direction: column;
+    padding: 1rem 2rem;
   }
   .skills-block h3 {
-    font-size: 150%;
+    font-size: 140%;
     text-align: center;
+  }
+  .skills-block h4 {
+    font-size: 100%;
+  }
+  .mobile-skills-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .page-section-contact {
+    padding: 5rem 3rem;
+  }
+  .page-section-contact p {
+    font-size: 90%;
+  }
+  .contact-form h4 {
+    font-size: 90%;
+  }
+  footer p {
+    font-size: 90%;
   }
 }
