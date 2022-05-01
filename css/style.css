@@ -44,15 +44,24 @@ img {
   background: #ccc;
   z-index: 100;
   overflow-y: scroll;
+  padding-bottom: 1rem;
 }
 
 .component-page__header-container {
   position: static;
-  padding: .5rem 1.5rem;
+  padding: 1.5rem;
+}
+
+.sidebar-nav {
+  margin-top: 2rem;
+}
+
+.sidebar-nav__section {
+  margin-bottom: 2rem;
 }
 
 .sidebar-nav__heading {
-  margin-bottom: .3em;
+  margin-bottom: .5rem;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.2rem;
@@ -73,11 +82,12 @@ img {
 
 .component-page__main-heading {
   font-size: 2rem;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
-.component-page__main-text {
+.component-page__main-body {
   font-size: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .component {
@@ -140,6 +150,22 @@ img {
   z-index: 10;
 }
 
+/*Templates - Mobile*/
+
+@media (max-width: 60rem) {
+  .component-page {
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+  }
+  .component-page__header {
+    display: none;
+  }
+  .component-page__main {
+    width: 100vw;
+  }
+}
+
+
 /*Typography*/
 
 h1 {
@@ -187,7 +213,9 @@ a {
   color: black;
 }
 
-/***** Page header *****/
+
+
+/***** Page Header *****/
 
 header {
   display: grid;
@@ -266,10 +294,6 @@ ul {
   transform: rotate(-20deg);
 }
 
-/*Page header -- Mobile*/
-
-
-
 
 
 /***** Sidebar *****/
@@ -343,11 +367,6 @@ ul {
   box-shadow: 3px 3px 0px #0370AD;
 }
 
-/* Sidebar -- Mobile */
-
-
-
-
 
 
 /***** Main Page Section *****/
@@ -405,10 +424,6 @@ ul {
   width: 150px;
 }
 
-/*Main content -- Mobile*/
-
-
-
 
 
 /***** Aside Section *****/
@@ -448,7 +463,7 @@ aside {
   transform: scale(1.3);
 }
 
-/*Aside - homepage specific*/
+/*Aside - Homepage Specific*/
 
 .main-content-aside .aside__image img {
   width: 100vw;
@@ -461,12 +476,9 @@ aside {
   max-width: 100vw;
 }
 
-/*Aside - Mobile*/
 
 
-
-
-/***** Page section border *****/
+/***** Page Section Border *****/
 
 .snoopy-position {
   position: absolute;
@@ -486,8 +498,6 @@ aside {
   overflow-x: hidden;
   background: var(--light-yellow);
 }
-
-
 
 .tickertape {
   display: flex;
@@ -525,7 +535,6 @@ aside {
   align-items: center;
 }
 
-
 .border__icon {
   height: 1.5rem;
   margin-left: 30px;
@@ -534,10 +543,7 @@ aside {
   max-width: 100%;
 }
 
-
-
-
-/*Page section border - Homepage specific*/
+/*Page Section Border - Homepage Specific*/
 
 .page-section__border--bottom {
   margin-top: 0;
@@ -551,14 +557,7 @@ aside {
 
 
 
-
-
-
-
-
-
-
-/***** Page section testament *****/
+/***** Page Section Testament *****/
 
 .page-section-testament {
   display: grid;
@@ -638,7 +637,7 @@ aside {
 
 
 
-/***** Page section skills *****/
+/***** Page Section Skills *****/
 
 .page-section-skills {
   border-top: 1px solid var(--black);
@@ -693,16 +692,7 @@ aside {
 
 
 
-.skills-block h3 {
-  font-size: 180%;
-  text-align: center;
-}
-.skills-block h4 {
-  font-size: 140%;
-}
-
-
-/***** Contact form *****/
+/***** Contact Form *****/
 
 .contact-wrapper {
   padding: 8vh 5vw;
@@ -746,6 +736,8 @@ aside {
   background: var(--light-yellow);
 }
 
+
+
 /***** Footer *****/
 
 .footer {
@@ -762,21 +754,22 @@ aside {
 
 
 
-
-
-
-
-
-
-
-/*Homepage - iPad*/
+/**** MOBILE STYLE ****/
 
 .menu-button,
-.mobile-image {
+.mobile__image--alexis {
   display: none;
 }
 
 @media (max-width: 60rem) {
+  
+  .page-header__nav,
+  .side-navigation,
+  .main-content-aside {
+    display: none;
+  }
+
+  /**** MOBILE - HEADER ****/
   .wrapper {
     border: none;
     background: var(--light-yellow);
@@ -789,7 +782,7 @@ aside {
     border: 1px solid var(--black);
     border-radius: 30px;
     width: 130px;
-    padding: .4em 1em;
+    padding: .5rem;
     margin-left: -60px;
   }
   .fa-solid {
@@ -797,10 +790,6 @@ aside {
   }
   .header__status p {
     font-size: .9rem;
-/*    padding: 0;*/
-  }
-  .page-header__nav {
-    display: none;
   }
   .menu-button {
     display: block;
@@ -817,9 +806,7 @@ aside {
   .fa-grip-lines {
     padding-left: 10px;
   }
-  .side-navigation {
-    display: none;
-  }
+  /**** MOBILE - MAIN CONTENT ****/
   .main-content {
     margin: 0;
   }
@@ -827,38 +814,21 @@ aside {
     height: auto;
   }
   .main-content-text {
-    width: 90vw;
-    padding: 6rem 2rem;
+    width: 100vw;
+    padding: 4vh 5vw 8vh;
     z-index: 2;
   }
-  .main-content-text p {
-    font-size: 90%;
-    padding: 0;
-  }
   .main-content-text > * {
-    width: 90%;
+    width: 80%;
   }
-  h1 {
-    font-size: 200%;
-    margin: 0;
+  .main-content__heading {
+    font-size: 2rem;
   }
-  h2 {
-    font-size: 150%;
+  .main-content__body {
+    font-size: .9rem;
   }
-  .stats-block h3 {
-    font-size: 200%;
-  }
-  h5 {
-    font-size: 120%;
-  }
-
-  p {
-    padding: 1rem 0;
-  }
-  .main-content-aside {
-    display: none;
-  }
-  .mobile-image {
+  /**** MOBILE - ASIDE ****/
+  .mobile__image--alexis {
     display: block;
     position: absolute;
     left: auto;
@@ -869,29 +839,46 @@ aside {
     width: 30%;
     opacity: .5;
   }
+  /**** MOBILE - TESTAMENT ****/
   .page-section-testament {
     display: flex;
     flex-direction: column-reverse;
-    padding: 3%;
-    margin: 0;
+    padding: 12vh 5vw 8vh;
   }
-  .client-block {
-    padding-top: 1rem;
-  }
-  .client-block__name p {
+  .page-section-testament > * {
     padding: 0;
   }
+  .testament-summary__heading {
+    font-size: 1.5rem;
+  }
+  .testament-summary-block h3 {
+    font-size: 2rem;
+  }
+  .testament-quote {
+    margin-top: 4vh;
+  }
+  .testament-blockquote {
+    font-size: .9rem;
+  }
+  .client-block__name h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .client-block__name p {
+    font-size: 1rem;
+  }
+
+  /**** MOBILE - SKILLS ****/
   .skills-block {
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 4vh 5vw;
   }
-  .skills-block h3 {
-    font-size: 140%;
+  .skills-block__main-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
     text-align: center;
-  }
-  .skills-block h4 {
-    font-size: 120%;
+    margin-top: 0;
   }
   .mobile-skills-block {
     display: flex;
@@ -899,29 +886,33 @@ aside {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  }
-  .mobile-skills-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
     column-gap: 20px;
   }
-  .page-section-contact {
-    padding: 5rem 3rem;
+  .flood .button {
+    margin-top: 20px;
   }
-  .page-section-contact p {
-    font-size: 90%;
+  /**** MOBILE - CONTACT ****/
+  .page-section-contact {
+    padding: 8vh 5vw;
+  }
+  .contact__heading {
+    font-size: 1.5rem;
+  }
+  .contact__body {
+    font-size: .9rem; 
+  }
+  .contact-form {
+    margin-bottom: 40px;
   }
   .contact-form h4 {
-    font-size: 90%;
+    font-size: .9rem;
   }
   .contact-form input {
     font-size: 90%;
     width: 180px;
   }
-  footer p {
+  /**** MOBILE - FOOTER ****/
+  .footer-copyright {
     font-size: 90%;
   }
 }
