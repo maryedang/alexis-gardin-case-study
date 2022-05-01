@@ -61,7 +61,7 @@ p {
 
 .component-page {
   display: grid;
-  grid-template-columns: 18rem minmax(0, 1fr);
+  grid-template-columns: 15rem minmax(0, 1fr);
   grid-template-areas: "header main";
   padding-top: 0;
 }
@@ -95,7 +95,7 @@ p {
 
 .component-page__main {
   grid-area: main;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .component {
@@ -328,7 +328,7 @@ aside {
 }
 
 .aside__text h2 {
-  padding: 3rem 0 4rem;
+  /*padding: 3rem 0 4rem;*/
   line-height: 1.2;
   text-align: center;
   transition: transform .1s ease-in;
@@ -347,6 +347,7 @@ aside {
   overflow-x: hidden;
   height: 8vh;
   padding: 1rem 0;
+  background: var(--light-yellow);
 }
 
 .tickertape {
