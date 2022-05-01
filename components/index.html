@@ -78,8 +78,8 @@
   </div>
 
   <div class="container component-page__main">
-    <h1>Web Design System</h1>
-    <p>
+    <h1 class="component-page__main-heading">Web Design System</h1>
+    <p class="component-page__main-body">
       This is a collection of components based on my study of the design
       system of the
       <a href="https://wolffolins.com">Alexis Gardin</a> website.
@@ -151,13 +151,13 @@
 						<nav class="page-header__nav">
 							<ul class="nav__list">
 								<li class="nav__item">
-								  <a href="#!" title="Visit my work"><div class="move">Portfolio</div></a>
+								  <a href="#!" title="Visit my work"><div class="nav__item-move">Portfolio</div></a>
 								</li>
 								<li class="nav__item">
-								  <a href="#!" title="About me"><div class="move">&Agrave; propos</div></a>
+								  <a href="#!" title="About me"><div class="nav__item-move">&Agrave; propos</div></a>
 								</li>
 								<li class="nav__item nav__item--active">
-								  <a href="#!" title="Write to me"><div class="move">Contact</div></a>
+								  <a href="#!" title="Write to me"><div class="nav__item-move">Contact</div></a>
 								</li>
 							</ul>
 						</nav>
@@ -166,7 +166,7 @@
 			</article>
 
 			<article id="side-header" class="component clearfix">
-				<h3 class="component__name bump">Side Header</h3>
+				<h3 class="component__name force-top-align">Side Header</h3>
 				<div class="component__image two-col">
 					<img
 						srcset="img/side-navigation1.png 2x" 
@@ -180,10 +180,10 @@
 								<li class="social-media__item">
 								  <a href="#!" title="Visit my work"><img src="img/malt-logo.svg" alt="image icon"></a>
 								</li>
-								<li class="social-media__item">
+								<li class="social-media__item social-media__item--black">
 								  <a href="#!" title="Send me a message"><img src="img/email-logo.svg" alt="image icon"></a>
 								</li>
-								<li class="social-media__item">
+								<li class="social-media__item social-media__item--blue">
 								  <a class="" href="#!" title="Connect with LinkedIn"><img class="" src="img/linkedin-logo.svg" alt="image icon"></a>
 								</li>
 							</ul>
@@ -205,10 +205,10 @@
 				</div>
 				<div class="component__code">
 					<main>
-						<h1>Hello 👋<br>
+						<h1 class="main-content__heading">Hello 👋<br>
 						Je m'appelle <span class="special-style">Alexis Gardin</span><br>
 						Et je suis ✏️ <span class="special-style">UX UI</span> designer & expert <span class="special-style">Webflow</span>.</h1>
-						<p>Originaire de Normandie et anciennement chef de projet, c'est après un voyage d'un an en Nouvelle-Zélande que je décide de m'orienter vers les métiers du web. S'en suivent 2 bachelors dans les métiers du web (chef de projet digital + Designer Web) ainsi qu'une certification professionnelle d'UX designer délivré par l'UX design institute de Dublin.</p>
+						<p class="main-content__body">Originaire de Normandie et anciennement chef de projet, c'est après un voyage d'un an en Nouvelle-Zélande que je décide de m'orienter vers les métiers du web. S'en suivent 2 bachelors dans les métiers du web (chef de projet digital + Designer Web) ainsi qu'une certification professionnelle d'UX designer délivré par l'UX design institute de Dublin.</p>
 						<a class="button" href="#!">Me contacter</a>
 						<img class="main__image-snoopy" src="img/main__image-snoopy.png" alt="snoopy image">
 					</main>
@@ -345,16 +345,16 @@
 				</div>
 				<div class="component__code">
 					<div class="page-section-testament">
-						<div class="blockquote--left">
-							<div class="blockquote__images-stars">
+						<div class="testament-quote">
+							<div class="testament-wrap__image-stars">
 								<img src="img/star-testimonial.svg" alt="five stars image">
 								<img src="img/star-testimonial.svg" alt="five stars image">
 								<img src="img/star-testimonial.svg" alt="five stars image">
 								<img src="img/star-testimonial.svg" alt="five stars image">
 								<img src="img/star-testimonial.svg" alt="five stars image">
 							</div>
-							<blockquote>"Ce fut un bonheur de travailler avec Alexis. Il est intervenu pour <strong>refondre notre site</strong> internet dans un <strong>temps record</strong>. Il a tenu les délais et a su aller plus loin que sa mission initiale en réalisant certaines pages pour lesquelles nous n'avions pas de <strong>maquettes</strong> à l'agence."</blockquote>
-							<div class="client-block">
+							<blockquote class="testament-blockquote">"Ce fut un bonheur de travailler avec Alexis. Il est intervenu pour <strong>refondre notre site</strong> internet dans un <strong>temps record</strong>. Il a tenu les délais et a su aller plus loin que sa mission initiale en réalisant certaines pages pour lesquelles nous n'avions pas de <strong>maquettes</strong> à l'agence."</blockquote>
+							<div class="testament-client-block">
 								<img class="client-block__image" src="img/neobrain_logo.jpeg" alt="logo du client d'alexis gardin, neobrain">
 								<div class="client-block__name">
 									<h5>Adam Gambus</h5>
@@ -362,7 +362,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="blockquote--right">
+						<div class="testament-summary">
 							<h2>Du design au développement, j'aide les entreprises à concrétiser leur projet.</h2>
 							<ul class="stats-block">
 								<li>
