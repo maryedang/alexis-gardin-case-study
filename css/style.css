@@ -47,7 +47,7 @@ h2, h3 {
 }
 
 h4 {
-  font-size: 1.5vw;
+  font-size: 1.8rem;
 }
 
 h5 {
@@ -286,9 +286,10 @@ a {
 
 .button {
   font-size: 1.1rem;
+  line-height: 1em;
   font-weight: 500;
   background: var(--brand-yellow);
-  padding: .8rem 2rem;
+  padding: .8rem 1rem;
   border: 2px solid black;
   border-radius: 3px;
   transition: .1s ease-in;
@@ -396,14 +397,34 @@ aside {
 
 .page-section-testament {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 40% 1fr;
   grid-gap: 2rem;
-  padding: 6rem;
+  padding: 8vw 5vw;
   justify-content: space-between;
 }
 
+.page-section-testament h2 {
+  font-size: 32px;
+  line-height: 1.2em;
+}
+
+.page-section-testament h5 {
+  font-size: 1.2rem;
+  line-height: 1.2em;
+}
+
+.client-block {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.client-block p {
+  padding: 0;
+}
+
 .page-section-testament > * {
-  padding: 2rem;
+  padding: 3%;
 }
 
 .blockquote__images-stars {
@@ -465,6 +486,7 @@ blockquote {
 
 .stats-block li h5 {
   margin: 0;
+  font-size: 1.2rem;
 }
 
 .skills-block {
@@ -515,7 +537,8 @@ blockquote {
 .contact-form h4 {
   font-weight: 500;
   display: inline-block;
-  line-height: 1;
+  line-height: 1em;
+  font-size: 24px;
 }
 
 .contact-form input {
@@ -577,7 +600,7 @@ footer p {
 
 .side-navigation--bottom {
   position: absolute;
-  bottom: 5rem;
+  bottom: 0rem;
 }
 
 .social-media__item--black a:hover img {
@@ -678,6 +701,14 @@ footer p {
   column-gap: 20px;
 }
 
+.skills-block h3 {
+  font-size: 180%;
+  text-align: center;
+}
+.skills-block h4 {
+  font-size: 140%;
+}
+
 /*Homepage - iPad*/
 
 .menu-button,
@@ -757,10 +788,6 @@ footer p {
   .stats-block h3 {
     font-size: 200%;
   }
-  h4 {
-    font-size: 120%;
-  }
-
   h5 {
     font-size: 120%;
   }
@@ -770,7 +797,7 @@ footer p {
   }
   .main-content-aside {
     display: none;
-  }sn
+  }
   .mobile-image {
     display: block;
     position: absolute;
@@ -785,7 +812,7 @@ footer p {
   .page-section-testament {
     display: flex;
     flex-direction: column-reverse;
-    padding: 0;
+    padding: 3%;
     margin: 0;
   }
   .client-block {
@@ -804,7 +831,7 @@ footer p {
     text-align: center;
   }
   .skills-block h4 {
-    font-size: 100%;
+    font-size: 120%;
   }
   .mobile-skills-block {
     display: flex;
@@ -821,6 +848,10 @@ footer p {
   }
   .contact-form h4 {
     font-size: 90%;
+  }
+  .contact-form input {
+    font-size: 90%;
+    width: 180px;
   }
   footer p {
     font-size: 90%;
