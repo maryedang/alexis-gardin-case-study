@@ -42,15 +42,15 @@ h1 .special-style {
 
 h2, h3 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 p {
@@ -219,6 +219,7 @@ a {
   align-items: center;
   justiify-content: flex-start;
   float: left;
+  margin-left: -30px;
 }
 
 .fa-circle {
@@ -291,6 +292,7 @@ a {
   border-radius: 3px;
   transition: .1s ease-in;
   display: inline-block;
+  text-align: center;
 }
 
 .button:hover {
@@ -625,7 +627,90 @@ footer p {
 
 /*Homepage - iPad*/
 
-@media (max-width: 60rem) {
+.menu-button,
+.mobile-image {
+  display: none;
+}
 
+@media (max-width: 60rem) {
+  .wrapper {
+    border: none;
+    background: var(--light-yellow);
+    position: static;
+  }
+  .header__logo {
+    border: none;
+  }
+  .header__status {
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    width: 130px;
+    padding: .4em 1em;
+    margin-left: -60px;
+  }
+  .fa-solid {
+    padding-right: .5rem;
+  }
+  .header__status p {
+    font-size: .9rem;
+    padding: 0;
+  }
+  .page-header__nav {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    width: 100px;
+    padding: .4em 1em;
+    margin-right: 1rem;
+  }
+  .menu-text {
+    display: flex;
+    align-items: center;
+  }
+  .fa-grip-lines {
+    padding-left: 10px;
+  }
+  .side-navigation {
+    display: none;
+  }
+  .main-content {
+    margin: 0;
+  }
+  .main-content-top {
+    height: auto;
+  }
+  .main-content-text {
+    width: 100vw;
+    padding: 1rem 2rem;
+    z-index: 2;
+  }
+  .main-content-text > * {
+    width: 90%;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  .snoopy-position {
+    position: static;
+    /*left: 50vw;
+    bottom: 5vh;*/
+  }
+  .main-content-aside {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    position: absolute;
+    left: auto;
+    top: 120px;
+    right: 40px;
+    bottom: auto;
+    display: block;
+    width: 50vw;
+    opacity: .5;
+  }
 
 }
