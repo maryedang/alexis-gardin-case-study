@@ -28,7 +28,7 @@ img {
   max-width: 100%;
 }
 
-/*Templates - Left Navbar*/
+/*Components - Left Navbar*/
 
 .component-page {
   display: grid;
@@ -73,7 +73,7 @@ img {
   font-size: .9rem;
 }
 
-/*Templates - Main Content*/
+/*Components - Main Content*/
 
 .component-page__main {
   grid-area: main;
@@ -154,7 +154,7 @@ img {
   z-index: 10;
 }
 
-/*Templates - Mobile*/
+/*Components - Mobile*/
 
 @media (max-width: 60rem) {
   .component-page {
