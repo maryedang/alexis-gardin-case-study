@@ -249,7 +249,7 @@ header {
 .header__status {
   display: flex;
   align-items: center;
-  justiify-content: flex-start;
+  justify-content: flex-start;
   float: left;
   margin-left: -30px;
 }
@@ -275,7 +275,7 @@ ul {
 .nav__item a {
   padding: 1.8rem 2.2rem;
   border-right: 1px solid black;
-  display; inline-block;
+  display: inline-block;
   font-size: 1.1rem;
   font-weight: 500;
 }
